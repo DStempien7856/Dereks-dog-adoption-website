@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 5px 15px;
+}
+
+.nav {
+    background-color: rgb(203, 243, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 3px rgb(116, 221, 253);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 10px;
+}
+
+.logo {
+    height: 70px;
+    padding: 10px;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(https://cdn.pixabay.com/photo/2015/05/30/19/53/playing-puppies-790638_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    background-color: rgb(203, 243, 255);
+    gap: 50px;
+    padding: 50px;
+}
+
+.grid-image {
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.grid-info {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    height: fit-content;
+}
