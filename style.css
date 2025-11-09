@@ -9,6 +9,10 @@ ul {
     padding: 5px 15px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .nav {
     background-color: rgb(203, 243, 255);
     display: flex;
@@ -66,6 +70,7 @@ ul {
     background-color: white;
     border-radius: 0 0 10px 10px;
     height: fit-content;
+    margin: 0;
 }
 
 .name {
@@ -118,4 +123,37 @@ footer {
     font-size: 14px;
     color: rgb(155, 155, 155);
     padding: 10px;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 99;
+}
+
+.popup#menu-1 {
+  left: 190px;
+}
+
+.popup#menu-2 {
+  left: 190px;
+}
+
+.popup#menu-3 {
+  left: 190px;
+}
+
+.popup#menu-4 {
+  left: 190px;
+}
+
+.dropdown-menu#menu-2 {
+  left: 290px;
+  min-width: 400px;
+}
+
+.dropdown-menu#menu-3 {
+  left: 390px;
+  min-width: 400px;
 }
