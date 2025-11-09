@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 ul {
@@ -14,6 +15,8 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     border-bottom: solid 3px rgb(116, 221, 253);
+    position: fixed;
+    width: 100%;
 }
 
 .nav-links {
@@ -33,12 +36,12 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 30%;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: larger;
+    font-size: 24px;
     color: white;
 }
 
@@ -63,4 +66,56 @@ ul {
     background-color: white;
     border-radius: 0 0 10px 10px;
     height: fit-content;
+}
+
+.name {
+    font-size: 36px;
+}
+
+.age, .breed {
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.address {
+    font-size: 20px;
+    padding: 10px 0;
+    color: rgb(112, 112, 112);
+}
+
+footer {
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+.foot-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 20%;
+    justify-items: center;
+    border-bottom: solid 2px black;
+    color: rgb(104, 169, 253);
+}
+
+.foot-title {
+    font-size: 20px;
+    margin: 15px 0;
+    border-bottom: solid 1px rgb(104, 169, 253);
+}
+
+.foot-grid-item {
+    font-size: 16px;
+    text-align: center;
+}
+
+.foot-grid-item li {
+    padding: 10px 0;
+}
+
+.trademark {
+    margin: 0 20%;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(155, 155, 155);
+    padding: 10px;
 }
