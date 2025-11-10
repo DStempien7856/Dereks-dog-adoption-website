@@ -8,28 +8,32 @@ const menuPopup2 = document.querySelector('#menu-2')
 const menuPopup3 = document.querySelector('#menu-3')
 const menuPopup4 = document.querySelector('#menu-4')
 
-const menu1 = () => {
+const menu1 = (e) => {
+    e.preventDefault()
     menuPopup1.style.display = "block"
     menuPopup2.style.display = "none"
     menuPopup3.style.display = "none"
     menuPopup4.style.display = "none"
 }
 
-const menu2 = () => {
+const menu2 = (e) => {
+    e.preventDefault()
     menuPopup1.style.display = "none"
     menuPopup2.style.display = "block"
     menuPopup3.style.display = "none"
     menuPopup4.style.display = "none"
 }
 
-const menu3 = () => {
+const menu3 = (e) => {
+    e.preventDefault()
     menuPopup1.style.display = "none"
     menuPopup2.style.display = "none"
     menuPopup3.style.display = "block"
     menuPopup4.style.display = "none"
 }
 
-const menu4 = () => {
+const menu4 = (e) => {
+    e.preventDefault()
     menuPopup1.style.display = "none"
     menuPopup2.style.display = "none"
     menuPopup3.style.display = "none"

@@ -11,6 +11,11 @@ ul {
 
 a {
     text-decoration: none;
+    color: rgb(203, 243, 255);
+}
+
+a:hover {
+    color: rgb(0, 195, 255);
 }
 
 .nav {
@@ -27,12 +32,24 @@ a {
     display: flex;
     flex-direction: row;
     gap: 40px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .logo {
     height: 70px;
     padding: 10px;
+}
+
+.button {
+    display: block;
+    padding: 12px 10px;
+    margin: 10px 0;
+}
+
+.button:hover {
+    background-color: rgb(47, 47, 255);
+    color: white;
+    cursor: pointer;
 }
 
 .banner {
@@ -51,10 +68,10 @@ a {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 4fr);
+    grid-template-columns: repeat(3, 3fr);
     background-color: rgb(203, 243, 255);
     gap: 50px;
-    padding: 50px;
+    padding: 50px 300px;
 }
 
 .grid-image {
@@ -127,33 +144,51 @@ footer {
 
 .popup {
     display: none;
-    position: absolute;
-    background-color: white;
+    position: fixed;
+    background-color: rgb(37, 37, 37);
     z-index: 99;
+    top: 60px;
+    border: solid 1px black;
+    font-size: 20px;
+}
+
+.popup-list li {
+    padding: 10px;
+    border-bottom: solid 1px rgb(116, 221, 253);
 }
 
 .popup#menu-1 {
-  left: 190px;
+    right: 525px;
 }
 
 .popup#menu-2 {
-  left: 190px;
+    right: 505px;
 }
 
 .popup#menu-3 {
-  left: 190px;
+    right: 325px;
 }
 
 .popup#menu-4 {
-  left: 190px;
+    right: 195px;
 }
 
-.dropdown-menu#menu-2 {
-  left: 290px;
-  min-width: 400px;
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(1, 9fr);
+        padding: 50px;
+    }
 }
 
-.dropdown-menu#menu-3 {
-  left: 390px;
-  min-width: 400px;
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(2, 5fr);
+        padding: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+    .grid {
+        padding: 50px;
+    }
 }
