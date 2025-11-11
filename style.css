@@ -40,6 +40,10 @@ a:hover {
     height: 90px;
 }
 
+.hamburger:hover {
+    cursor: pointer;
+}
+
 .logo {
     height: 70px;
     padding: 10px;
@@ -75,13 +79,9 @@ a:hover {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
-    background-color: rgb(203, 243, 255);
+    background-image: url(https://i.ibb.co/qL5CFd1p/Dog-Paw-Print-Background.png);
     gap: 50px;
     padding: 50px 300px;
-}
-
-.grid-item {
-    box-shadow: 5px 5px 5px rgb(116, 221, 253);
 }
 
 .grid-image {
@@ -89,6 +89,7 @@ a:hover {
     width: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
+    box-shadow: 5px 5px 5px rgb(116, 221, 253);
 }
 
 .grid-info {
@@ -98,6 +99,7 @@ a:hover {
     border-radius: 0 0 10px 10px;
     height: fit-content;
     margin: 0;
+    box-shadow: 5px 5px 5px rgb(116, 221, 253);
 }
 
 .name {
@@ -117,7 +119,6 @@ a:hover {
 
 footer {
     background-color: rgb(37, 37, 37);
-    color: white;
 }
 
 .foot-grid {
@@ -126,13 +127,13 @@ footer {
     margin: 0 20%;
     justify-items: center;
     border-bottom: solid 2px black;
-    color: rgb(104, 169, 253);
 }
 
 .foot-title {
     font-size: 20px;
     margin: 15px 0;
     border-bottom: solid 1px rgb(104, 169, 253);
+    color: rgb(104, 169, 253);
 }
 
 .foot-grid-item {
@@ -156,7 +157,7 @@ footer {
     display: none;
     position: fixed;
     background-color: rgb(37, 37, 37);
-    z-index: 99;
+    z-index: 98;
     top: 60px;
     border: solid 1px black;
     font-size: 20px;
@@ -183,8 +184,34 @@ footer {
     right: 195px;
 }
 
+.ham-menu {
+    display: none;
+    background-color: rgb(37, 37, 37);
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 40vw;
+    text-align: center;
+    padding:  0 40px;
+    overflow-y: scroll;
+    opacity: 95%;
+}
+
+.ham-menu li {
+    padding: 10px;
+}
+
+.ham-title {
+    font-size: 20px;
+    border-bottom: solid 1px rgb(104, 169, 253);
+    color: rgb(104, 169, 253);
+}
+
 .page2 {
-    background-color: rgb(203, 243, 255);
+    background-image: url(https://i.ibb.co/qL5CFd1p/Dog-Paw-Print-Background.png);
 }
 
 .par1 {
@@ -223,7 +250,7 @@ footer {
 }
 
 .invisible {
-    color: rgb(203, 243, 255);
+    color: rgb(20, 56, 255);
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {

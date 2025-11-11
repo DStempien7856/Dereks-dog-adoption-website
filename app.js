@@ -12,6 +12,10 @@ const menuPopup2 = document.querySelector('#menu-2')
 const menuPopup3 = document.querySelector('#menu-3')
 const menuPopup4 = document.querySelector('#menu-4')
 
+const hamButton = document.querySelector('.hamburger')
+const hamMenu = document.querySelector('.ham-menu')
+const hamClose = document.querySelector('.ham-close')
+
 const menu1 = () => {
     menuPopup1.style.display = "block"
     menuPopup2.style.display = "none"
@@ -40,6 +44,10 @@ const menu4 = () => {
     menuPopup4.style.display = "block"
 }
 
+const ham = () => {
+    hamMenu.style.display = "block"
+}
+
 menuClose1.addEventListener('click', () => {
     menuPopup1.style.display = "none"
 })
@@ -56,7 +64,12 @@ menuClose4.addEventListener('click', () => {
     menuPopup4.style.display = "none"
 })
 
+hamClose.addEventListener('click', () => {
+    hamMenu.style.display = "none"
+})
+
 menuButton1.addEventListener('click', menu1)
 menuButton2.addEventListener('click', menu2)
 menuButton3.addEventListener('click', menu3)
 menuButton4.addEventListener('click', menu4)
+hamButton.addEventListener('click', ham)
